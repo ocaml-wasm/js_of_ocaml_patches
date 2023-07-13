@@ -5,9 +5,9 @@ module Dom_html = struct
   (* No js_of_ocaml PR yet. *)
   class type wheelEvent = object
     inherit mouseEvent
-    method deltaX : float readonly_prop
-    method deltaY : float readonly_prop
-    method deltaZ : float readonly_prop
+    method deltaX : number t readonly_prop
+    method deltaY : number t readonly_prop
+    method deltaZ : number t readonly_prop
     method deltaMode : int readonly_prop
   end
 end
